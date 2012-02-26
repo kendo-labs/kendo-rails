@@ -4,20 +4,22 @@ Kendo UI For Rails!
 
 This gem provides:
 
-* 
+* Kendo UI JavaScript (Minified Version of the Complete Web Suite)
+* Kendo UI Styles (Common Styles and the Default Theme)
 
 ## Rails 3.1
 
 For Rails 3.1 and greater, the files will be added to the asset pipeline and available for you to use. These two lines will be added to the file `app/assets/javascripts/application.js` by default:
 
-    //=require jquery
-	//=require kendo.all
+    //= require jquery
+	//= require kendo/kendo.all.min
 
-To work with Kendo UI Themes, you'll need to add <link> elements to your layouts, like so
+To work with Kendo UI Themes, you'll need to add the following to `app\assets\stylesheets\application.css`:
 
-	<link rel="stylesheet" href="stylesheets/kendo/kendo.common.min.css" rel="stylesheet" type="text/css">
-	<!-- Replace this with another style from stylesheets/kendo if you prefer -->
-	<link rel="stylesheet" href="css/kendo/kendo.default.min.css" rel="stylesheet" type="text/css">
+	*= require kendo/kendo.common.min
+	*= require kendo/kendo.default.min 
+
+If you prefer another theme (metro, silver, etc) replace the second line with the name of that theme
 
 ### Installation
 

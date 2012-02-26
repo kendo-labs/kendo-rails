@@ -4,7 +4,7 @@ require "kendoui-rails/version"
 
 Gem::Specification.new do |s|
   s.name        = "kendoui-rails"
-  s.version     = KendouiRails::VERSION
+  s.version     = Kendoui::Rails::VERSION
   s.authors     = ["Brandon Satrom"]
   s.email       = ["brandon@kendoui.com"]
   s.homepage    = "http://github.com/bsatrom/kendoui-rails"
