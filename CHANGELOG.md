@@ -2,7 +2,7 @@
 
   - Initial Commit
 
-## 0.0.3 (?)
+## 0.0.3 (26 February 2012)
 
   - Added install generator for automatically adding kendoui JS and CSS files to projects
   - Added generator option to specify theme (default is default)
