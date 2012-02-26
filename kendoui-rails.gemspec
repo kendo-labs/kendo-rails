@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = "kendoui-rails"
   s.version     = KendouiRails::VERSION
   s.authors     = ["Brandon Satrom"]
-  s.email       = ["bsatrom@kendoui.com"]
+  s.email       = ["brandon@kendoui.com"]
   s.homepage    = "http://github.com/bsatrom/kendoui-rails"
   s.summary     = %q{Gem for Adding Kendo UI to Ruby Applications}
   s.description = %q{Adds GPLv3 Portions of Kendo UI (http://kendoui.com) to javascripts and styles folders}

@@ -1,5 +1,8 @@
 require "kendoui-rails/version"
 
-module KendouiRails
-  # Your code goes here...
+module Kendoui
+  module Rails
+    class Engine < ::Rails::Engine
+    end
+  end
 end
