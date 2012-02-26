@@ -1,10 +1,11 @@
 require 'rails'
+require File.expand_path('../../../../../../lib/kendoui-rails/version', __FILE__)
 
 module KendoUI
   module Generators
     class InstallGenerator < ::Rails::Generators::Base
 
-      desc "This generator installs KendoUI #{KendoUI::Rails::KENDOUI_VERSION}"
+      desc "This generator installs KendoUI #{Kendoui::Rails::KENDOUI_VERSION}"
       class_option :ui, :type => :boolean, :default => false, :desc => "Include jQueryUI"
       source_root File.expand_path('../../../../../vendor/assets/javascripts/kendo', __FILE__)
 
