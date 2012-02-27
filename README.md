@@ -38,12 +38,14 @@ If you prefer another theme (metro, silver, etc) replace the second line with th
 
 ### Rails 3.0, Previous or Asset Pipeline Disabled
 
-For other environments, Kendo UI javascripts and styles will be added to the `public` folder for your application. After running `rails generate kendoui:install` you'll see the following in your public folder:
+For other environments, Kendo UI javascripts, styles and supporting images will be added to the `public` folder for your application. After running `rails generate kendoui:install` you'll see the following in your public folder:
 
     + public
         + javascripts
             - kendo.all.min.js
         + stylesheets
+        	+ textures
+        	+ default // Or, your specified theme 
             - kendo.common.min.css
             - kendo.default.min.css
 
@@ -62,6 +64,8 @@ As with Rails 3.1 environments, the install generator will add the `kendo.defaul
 As mentioned above, the install generator will install the default (also named default) theme for Kendo UI, unless you specify an alternate with the generator command. This is done using the `--theme` switch. For example, if you wanted to install the 'metro' theme, you can run the following:
 
     rails generate kendoui:install --theme=metro
+
+For Non-Asset Pipeline Environments, you can pass "all" into the theme switch, which will copy all available themes into your `public/stylesheets` directory.
 
 ### Learn more about [Kendo UI](http://kendoui.com)!
 

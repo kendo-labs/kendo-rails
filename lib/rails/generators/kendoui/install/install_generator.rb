@@ -22,7 +22,17 @@ if ::Rails.version < "3.1" || !::Rails.application.config.assets.enabled
           say_status("copying", "Kendo UI (#{Kendoui::Rails::KENDOUI_VERSION}) stylesheets", :green)
           
           copy_file "stylesheets/kendo/kendo.common.min.css", "public/stylesheets/kendo.common.min.css"
-          copy_file "stylesheets/kendo/kendo.#{options.theme}.min.css", "public/stylesheets/kendo.#{options.theme}.min.css"
+          directory "stylesheets/kendo/textures", "public/stylesheets/textures"
+          
+          if options.theme == "all"
+            ['black', 'blueopal', 'default', 'metro', 'silver'].each do |theme|
+              copy_file "stylesheets/kendo/kendo.#{theme}.min.css", "public/stylesheets/kendo.#{theme}.min.css"
+              directory "stylesheets/kendo/#{theme}", "public/stylesheets/#{theme}" 
+            end
+          else
+            copy_file "stylesheets/kendo/kendo.#{options.theme}.min.css", "public/stylesheets/kendo.#{options.theme}.min.css"
+            directory "stylesheets/kendo/#{options.theme}", "public/stylesheets/#{options.theme}" 
+          end      
         end
       end
     end
@@ -43,6 +53,8 @@ else
         end
               
         def add_kendoui_styles
+          if options.theme == "all" then options.theme = "default"
+            
           say_status("adding", "Kendo UI (#{Kendoui::Rails::KENDOUI_VERSION}) to styles pipeline", :green)
           
           insert_into_file "app/assets/stylesheets/application.css", "*= require kendo/kendo.common.min\n *= require kendo/kendo.#{options.theme}.min\n ", :before => "*= require_self"
