@@ -11,7 +11,7 @@ This gem provides:
 
 In your Gemfile, add this line:
 
-    gem "kendoui-rails"
+    gem 'kendoui-rails'
 
 Then, run `bundle install`. 
 
@@ -46,14 +46,22 @@ For other environments, Kendo UI javascripts and styles will be added to the `pu
         + stylesheets
             - kendo.common.min.css
             - kendo.default.min.css
-            
+
+Once these files are in place, you can add them to your layouts like so:
+
+	<link href="/stylesheets/kendo.common.min.css" rel="stylesheet"/>
+	<!-- If using an alternate theme, change this next line -->
+	<link href="/stylesheets/kendo.default.min.css" rel="stylesheet"/>
+	<script src="/javascripts/jquery.min.js"></script>
+	<script src="/javascripts/kendo.all.min.js"></script>
+	 
 As with Rails 3.1 environments, the install generator will add the `kendo.default.min.css` stylesheet by default, and you can customize the installed theme with the `--theme` switch
 
 ### Customizing the Installed Theme
 
 As mentioned above, the install generator will install the default (also named default) theme for Kendo UI, unless you specify an alternate with the generator command. This is done using the `--theme` switch. For example, if you wanted to install the 'metro' theme, you can run the following:
 
-    rails generate kendoui:install --theme:metro
+    rails generate kendoui:install --theme=metro
 
 ### Learn more about [Kendo UI](http://kendoui.com)!
 

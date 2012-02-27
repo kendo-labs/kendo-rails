@@ -14,6 +14,7 @@ if ::Rails.version < "3.1" || !::Rails.application.config.assets.enabled
         def copy_kendoui_scripts
           say_status("copying", "Kendo UI (#{Kendoui::Rails::KENDOUI_VERSION}) javascripts", :green)
           
+          copy_file "javascripts/jquery.min.js", "public/javascripts/jquery.min.js"
           copy_file "javascripts/kendo/kendo.all.min.js", "public/javascripts/kendo.all.min.js"
         end
               
