@@ -17,7 +17,7 @@ Then, run `bundle install`.
 
 After bundler completes, you can install the appropriate scripts by running the following command:
 
-    `rails generate kendoui:install` 
+    rails generate kendoui:install 
 
 Depending on your Rails version and environment, this command will either:
  a) add javascripts and stylesheets to your asset pipeline (Rails 3.1+);
