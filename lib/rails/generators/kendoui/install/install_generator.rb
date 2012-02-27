@@ -53,11 +53,15 @@ else
         end
               
         def add_kendoui_styles
-          if options.theme == "all" then options.theme = "default"
-            
+          if options.theme == "all"
+            @theme = "default"
+          else
+            @theme = options.theme
+          end
+
           say_status("adding", "Kendo UI (#{Kendoui::Rails::KENDOUI_VERSION}) to styles pipeline", :green)
           
-          insert_into_file "app/assets/stylesheets/application.css", "*= require kendo/kendo.common.min\n *= require kendo/kendo.#{options.theme}.min\n ", :before => "*= require_self"
+          insert_into_file "app/assets/stylesheets/application.css", "*= require kendo/kendo.common.min\n *= require kendo/kendo.#{@theme}.min\n ", :before => "*= require_self"
         end
       end
     end
