@@ -59,6 +59,25 @@ else
             @theme = options.theme
           end
 
+          say_status("deleting", "Existing Kendo UI Style References", :green)
+          
+          base='app/assets/stylesheets/'
+          app=base + 'application.css'
+          tmp=base + 'application_tmp.css'
+
+          search_text = %r{kendo/kendo}
+
+          File.open(tmp, "a") do |tmp_file|         
+            File.open(app) do |file|
+              file.each_line do |line|
+                tmp_file.puts(line) unless line =~ search_text
+                end
+              end
+          end
+
+          File.delete(app)
+          File.rename(tmp, app)
+
           say_status("adding", "Kendo UI (#{Kendoui::Rails::KENDOUI_VERSION}) to styles pipeline", :green)
           
           insert_into_file "app/assets/stylesheets/application.css", "*= require kendo/kendo.common.min\n *= require kendo/kendo.#{@theme}.min\n ", :before => "*= require_self"
