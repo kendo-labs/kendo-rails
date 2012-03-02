@@ -7,16 +7,13 @@ Gem::Specification.new do |s|
   s.version     = Kendoui::Rails::VERSION
   s.authors     = ["Brandon Satrom"]
   s.email       = ["brandon@kendoui.com"]
-  s.homepage    = "http://github.com/bsatrom/kendoui_rails"
+  s.homepage    = "http://github.com/telerik/kendoui_rails"
   s.summary     = %q{Gem for Adding Kendo UI to Ruby Applications}
   s.description = %q{Adds GPLv3 Portions of Kendo UI (http://kendoui.com) to javascripts and styles folders}
 
   s.rubyforge_project = "kendoui-rails"
 
   s.add_dependency 'jquery-rails'
-
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "rails", ">= 3.1.1"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

@@ -19,3 +19,9 @@
 
   - Added jQuery source for non-Asset Pipeline installations
   - Added 'all' option to theme switch to install all themes and styles
+
+## 0.0.6 (2 March 2012)
+
+  - Fixed issue with duplicate style entries in Generator
+  - Removed redundant .js files (only kendo.all.min and cultures remain)
+  - Removed development dependencies from gemspec
