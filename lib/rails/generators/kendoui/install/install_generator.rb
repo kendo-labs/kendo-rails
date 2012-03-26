@@ -15,7 +15,7 @@ if ::Rails.version < "3.1" || !::Rails.application.config.assets.enabled
           say_status("copying", "Kendo UI (#{Kendoui::Rails::KENDOUI_VERSION}) javascripts", :green)
           
           copy_file "javascripts/jquery.min.js", "public/javascripts/jquery.min.js"
-          copy_file "javascripts/kendo/kendo.all.min.js", "public/javascripts/kendo.all.min.js"
+          copy_file "javascripts/kendo/kendo.web.min.js", "public/javascripts/kendo.web.min.js"
         end
               
         def copy_kendoui_styles
@@ -49,7 +49,7 @@ else
         def add_kendoui_scripts
           say_status("adding", "Kendo UI (#{Kendoui::Rails::KENDOUI_VERSION}) to javascripts pipeline", :green)
           
-          insert_into_file "app/assets/javascripts/application.js", "//= require kendo/kendo.all.min\n", :before => "//= require_tree ."
+          insert_into_file "app/assets/javascripts/application.js", "//= require kendo/kendo.web.min\n", :before => "//= require_tree ."
         end
               
         def add_kendoui_styles

@@ -5,7 +5,7 @@
 This gem provides:
 
 * Kendo UI JavaScript (Minified Version of the Web Suite)
-* Kendo UI Styles (Common Styles and the Default Theme)
+* Kendo UI Styles (Common Styles and All themes)
 
 ## Installation
 
@@ -27,7 +27,7 @@ or, b) add javascripts and stylesheets to your `public/javascripts` and `public\
 
 For Rails 3.1 and greater, Kendo UI will be added to the asset pipeline and available for you to use. This line will be added to the file `app/assets/javascripts/application.js` by default:
 
-    //= require kendo/kendo.all.min
+    //= require kendo/kendo.web.min
 
 Appropriate styles will also be added to the asset pipeline, with the following two lines added to `app\assets\stylesheets\application.css`:
 
@@ -42,7 +42,7 @@ For other environments, Kendo UI javascripts, styles and supporting images will 
 
     + public
         + javascripts
-            - kendo.all.min.js
+            - kendo.web.min.js
         + stylesheets
         	+ textures
         	+ default // Or, your specified theme 
@@ -55,7 +55,7 @@ Once these files are in place, you can add them to your layouts like so:
 	<!-- If using an alternate theme, change this next line -->
 	<link href="/stylesheets/kendo.default.min.css" rel="stylesheet"/>
 	<script src="/javascripts/jquery.min.js"></script>
-	<script src="/javascripts/kendo.all.min.js"></script>
+	<script src="/javascripts/kendo.web.min.js"></script>
 	 
 As with Rails 3.1 environments, the install generator will add the `kendo.default.min.css` stylesheet by default, and you can customize the installed theme with the `--theme` switch
 
@@ -69,7 +69,7 @@ For Non-Asset Pipeline Environments, you can pass "all" into the theme switch, w
 
 ### Learn more about [Kendo UI](http://kendoui.com)!
 
-Kendo UI is an end-to-end HTML5, CSS3 and JavaScript solution for modern client-side development, developed by [Telerik](http://www.telerik.com). For more information about Kendo UI, including documentation, support, and additional Kendo UI libraries like DataViz and Mobile, visit http://KendoUI.com and http://demos.kendoui.com/. Also, be sure to check out the [Kendo UI Blog](http://www.kendoui.com/blogs.aspx) for breaking Kendo UI news as well as mobile development tips and commentary.
+Kendo UI is an end-to-end HTML5, CSS3 and JavaScript solution for modern client-side development, developed by [Telerik](http://www.telerik.com). For more information about Kendo UI, including documentation, support, and additional Kendo UI libraries like DataViz and Mobile, visit http://KendoUI.com and http://demos.kendoui.com/. Also, be sure to check out the [Kendo UI Blog](http://www.kendoui.com/blogs.aspx) for breaking Kendo UI news as well as development tips and commentary.
 
 You can also find Kendo UI on:
 

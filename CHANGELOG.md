@@ -25,3 +25,8 @@
   - Fixed issue with duplicate style entries in Generator
   - Removed redundant .js files (only kendo.all.min and cultures remain)
   - Removed development dependencies from gemspec
+
+## 0.0.7 (22 March 2012)
+
+  - Updated Source to Kendo UI Q1 Release ()
+  - Added LicenseAgreements Folder and Removed Eula-Kendo.pdf at root
