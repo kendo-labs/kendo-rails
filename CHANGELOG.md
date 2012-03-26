@@ -28,5 +28,6 @@
 
 ## 0.0.7 (22 March 2012)
 
-  - Updated Source to Kendo UI Q1 Release ()
+  - Updated Source to Kendo UI Q1 Release (2012.1.322)
+  - Updated all.min references to new web.min references (including docs)
   - Added LicenseAgreements Folder and Removed Eula-Kendo.pdf at root
