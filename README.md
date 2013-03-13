@@ -18,7 +18,7 @@ kendo-rails is designed to help developers work with Kendo UI Web in Rails appli
 
 kendo-rails has not been tested against any other versions of these libraries. You may find that versions other than these are compatible with [Project Name], but we make no claims to support those version, nor can we troubleshoot issues that arise when using those versions.
 
-## Installation
+## Installation and Usage
 
 In your Gemfile, add this line:
 
@@ -90,7 +90,7 @@ As a part of Kendo UI Labs, [Project Name] is intended to be a community-run pro
 
 ## Release Notes
 
-For change logs and release notes, see the [changelog](Changelog.md) file.
+For change logs and release notes, see the [changelog](CHANGELOG.md) file.
 
 ### Learn more about [Kendo UI](http://kendoui.com)!
 
