@@ -40,7 +40,7 @@
   - Updated Licensing Docs
   - Added Kendo UI Changelog to assets folder
 
-  ## 0.0.9 (02 February 2013)
+## 0.0.9 (02 February 2013)
 
   - Updated source to Kendo UI Q3 2012 Release (2012.3.1114)
   - Added new and updated scripts and styles

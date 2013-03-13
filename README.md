@@ -1,5 +1,6 @@
-# kendoui-rails
+# kendo-rails
 
+## About kendo-rails
 [Kendo UI](http://www.kendoui.com) For Rails!
 
 This gem provides:
@@ -7,11 +8,21 @@ This gem provides:
 * Kendo UI JavaScript (Minified Version of the Web Suite)
 * Kendo UI Styles (Common Styles and All themes)
 
+## Compatibility and Requirements
+
+kendo-rails is designed to help developers work with Kendo UI Web in Rails applications. It currently depends on the following libraries:
+
+- [jQuery](http://www.jquery.com) v1.8.2
+- [Kendo UI](http://www.kendoui.com) v2012.3.1114
+- [Rails](http://www.rails.com) 3.0+
+
+kendo-rails has not been tested against any other versions of these libraries. You may find that versions other than these are compatible with [Project Name], but we make no claims to support those version, nor can we troubleshoot issues that arise when using those versions.
+
 ## Installation
 
 In your Gemfile, add this line:
 
-    gem 'kendoui-rails'
+    gem 'kendo-rails'
 
 Then, run `bundle install`. 
 
@@ -67,6 +78,20 @@ As mentioned above, the install generator will install the default (also named d
 
 For Non-Asset Pipeline Environments, you can pass "all" into the theme switch, which will copy all available themes into your `public/stylesheets` directory.
 
+## How to Contribute
+
+If you would like to contribute to kendo-rails's source code, please read the [guidelines for pull requests and contributions](CONTRIBUTING.md). Following these guidelines will help make your contributions easier to bring in to the next release.
+
+## Getting Help
+
+Use this section to list ways that a developer can obtain help or support for this project, for instance, Stack Overflow. Make sure to also leave the following section:
+
+As a part of Kendo UI Labs, [Project Name] is intended to be a community-run project, and not an official part of any Kendo UI SKU (Web, DataViz, Mobile or Complete). As such, this project is not a supported part of Kendo UI, and is not covered under the support agreements for Kendo UI license holders. Please do not create support requests for this project, as these will be immediately closed and you'll be directed to post your question on a community forum.
+
+## Release Notes
+
+For change logs and release notes, see the [changelog](Changelog.md) file.
+
 ### Learn more about [Kendo UI](http://kendoui.com)!
 
 Kendo UI is an end-to-end HTML5, CSS3 and JavaScript solution for modern client-side development, developed by [Telerik](http://www.telerik.com). For more information about Kendo UI, including documentation, support, and additional Kendo UI libraries like DataViz and Mobile, visit http://KendoUI.com and http://demos.kendoui.com/. Also, be sure to check out the [Kendo UI Blog](http://www.kendoui.com/blogs.aspx) for breaking Kendo UI news as well as development tips and commentary.
@@ -77,6 +102,22 @@ You can also find Kendo UI on:
 * [Facebook](http://www.facebook.com/KendoUI)
 * [Google+](https://plus.google.com/117798269023828336983/posts)
 
+## License Information
+
+This project has been released under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html), the text of which is included below. This license applies ONLY to the project-specific source of each repository and does not extend to Kendo UI itself, or any other 3rd party libraries used in a repository. For licensing information about Kendo UI, see the [License Agreements page](https://www.kendoui.com/purchase/license-agreement.aspx) at [KendoUI.com](http://www.kendoui.com).
+
 Note: This gem provides a GPLv3 Licensed version of Kendo UI Core with full source code and access to major updates. For more information about commercial licenses for Kendo UI, as well as access to DataViz and Mobile suites, head over to the [Get Kendo UI](http://www.kendoui.com/blogs.aspx) page.
 
-This gem was created by [Brandon Satrom](http://twitter.com/brandonsatrom). Find me online at [userinexperince.com](http://userinexperince.com) or on Twitter as [@BrandonSatrom](http://twitter.com/brandonsatrom). You can also email me at [brandon@kendoui.com](mailto:brandon@kendoui.com).
+> Copyright © 2013 Telerik
+
+> Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+> [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+>  Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
