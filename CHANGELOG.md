@@ -45,3 +45,12 @@
   - Updated source to Kendo UI Q3 2012 Release (2012.3.1114)
   - Added new and updated scripts and styles
   - Updated changelog
+
+## 0.1.0 (20 March 2013)
+
+  - Updated source to Kendo UI Q1 2013 Release (2013.1.319)
+  - Bumped jQuery to v1.9.1
+  - Updated existing script files and styles
+  - Added retina sprite files
+  - Added scripts for new widgets (ColorPicker, MultiSelect, Tooltip)
+  - Added scripts for SPA features (View, Router)
