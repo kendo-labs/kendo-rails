@@ -50,7 +50,9 @@
 
   - Updated source to Kendo UI Q1 2013 Release (2013.1.319)
   - Bumped jQuery to v1.9.1
+  - Updated Readme
   - Updated existing script files and styles
   - Added retina sprite files
   - Added scripts for new widgets (ColorPicker, MultiSelect, Tooltip)
   - Added scripts for SPA features (View, Router)
+  - Updated gemspec to point to new Kendo Labs repo
