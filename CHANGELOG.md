@@ -56,3 +56,12 @@
   - Added scripts for new widgets (ColorPicker, MultiSelect, Tooltip)
   - Added scripts for SPA features (View, Router)
   - Updated gemspec to point to new Kendo Labs repo
+
+## 0.1.5 (22 July 2013)
+
+  - Updated source to Kendo UI Q2 2013 Release (2013.2.716)
+  - Updated Readme
+  - Updated existing scripts and styles
+  - Renamed retina sprite files
+  - Added new Flat theme
+  - Added scripts for Scheduler widget

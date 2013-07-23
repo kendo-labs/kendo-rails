@@ -13,7 +13,7 @@ This gem provides:
 kendo-rails is designed to help developers work with Kendo UI Web in Rails applications. It currently depends on the following libraries:
 
 - [jQuery](http://www.jquery.com) v1.9.1
-- [Kendo UI](http://www.kendoui.com) v2013.1.319 (Q1 2013)
+- [Kendo UI](http://www.kendoui.com) vLatest
 - [Rails](http://www.rails.com) 3.0+
 
 kendo-rails has not been tested against any other versions of these libraries. You may find that versions other than these are compatible with [Project Name], but we make no claims to support those version, nor can we troubleshoot issues that arise when using those versions.
